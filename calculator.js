@@ -11,6 +11,6 @@ app.post("/",function(req,res){
   let result=a+b;
   res.send("Sum is : "+result);
 });
-app.listen(3000,function(){
+app.listen(process.env.PORT ||3000,function(){
     console.log("server is running on 3000");
 });
